@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru" ng-app="ExampleApp">
+<head>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+	<meta charset="UTF-8">
+	<title>Fake JSON API</title>
+</head>
+<body>
+<div>
+  <div ng-controller="ExampleController as vm">
+    <form name="exampleForm">
+      <input placeholder="name" ng-model="vm.name" required>
+      <textarea ng-model="vm.jsonText" cols="100" rows="25" required></textarea>
+      <button ng-disabled="exampleForm.$invalid" ng-click="vm.generateData()">
+        Genereate
+      </button>
+    </form>
+    <div>
+      <div>
+        Your link for request:
+      </div>
+      <b>GET</b> <a href="{{vm.getUrl()}}">{{vm.getUrl()}}</a>
+    </div>
+    <div>
+       Result:
+    </div>
+    <pre>{{vm.result|json}}</pre>
+  </div>
+</div>
+</body>
