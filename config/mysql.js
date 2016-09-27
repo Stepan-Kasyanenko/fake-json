@@ -4,8 +4,8 @@
 "use strict";
 var pool=require('mysql').createPool({
 	host           :'localhost',
-	user           :'root',
-	password       :'root',
+	user           :'user',
+	password       :'pass',
 	database       :'fakejsondb',
 	connectionLimit:100
 });
