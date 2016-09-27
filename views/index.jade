@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1= title
+  div(ng-controller="MainController as vm")
+      table
+          thead
+            tr
+              th Name
+              th
+          tbody
+            tr(ng-repeat="js in vm.jsons")
+              td {{js.name}}
+              td
+                button(ng-click="vm.setCurrent(js)") edit
+                button(ng-click="vm.deleteModel(js)") delete
+      form(name="mainForm")
+          div
+            input(placeholder="name" ng-model="vm.current.name" required)
+          div(ng-jsoneditor ng-model="vm.current.json" ng-change="vm.getProperties()" options="vm.options" style="width: 400px; height: 300px;")
+          button(ng-disabled="mainForm.$invalid" ng-click="vm.generateData()") Genereate
+          button(ng-disabled="mainForm.$invalid" ng-click="vm.saveModel()") Save
+        div(config-object="vm.config" config-object-name="'Config'")
+      div Request:
+        b  GET
+        a(href="{{vm.getUrl()}}" target="blank")  {{vm.getUrl()}}
+      pre {{vm.result|json}}

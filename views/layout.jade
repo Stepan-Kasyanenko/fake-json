@@ -1,0 +1,20 @@
+doctype html
+html(ng-app="FakeApp")
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/javascripts/vendor/angular-ui/build/angular-ui.min.css')
+    link(rel='stylesheet', href='/javascripts/vendor/jsoneditor/dist/jsoneditor.min.css')
+    script(type='text/javascript', src='/javascripts/vendor/angular/angular.min.js')
+    script(type='text/javascript', src='/javascripts/vendor/angular-ui/build/angular-ui.min.js')
+    script(type='text/javascript', src='/javascripts/vendor/angular-ui-router/release/angular-ui-router.min.js')
+    script(type='text/javascript', src='/javascripts/vendor/randexp/randexp.js')
+    script(type='text/javascript', src='/javascripts/vendor/jsoneditor/dist/jsoneditor.min.js')
+    script(type='text/javascript', src='/javascripts/vendor/ng-jsoneditor/ng-jsoneditor.min.js')
+  body
+    block content
+  script(type='text/javascript', src='/javascripts/app.js')
+  script(type='text/javascript', src='/javascripts/service/services.js')
+  script(type='text/javascript', src='/javascripts/service/servicesAPI.js')
+  script(type='text/javascript', src='/javascripts/directive/directives.js')
+  script(type='text/javascript', src='/javascripts/controller/controllers.js')
