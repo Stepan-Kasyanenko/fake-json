@@ -21,7 +21,8 @@
     "angular-ui-router": "^0.3.1",
     "ng-jsoneditor": "angular-tools/ng-jsoneditor#^1.0.0",
     "angular-ui-grid": "^3.2.9",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "randexp": "^0.4.3"
   },
   "resolutions": {
     "angular": "^1.5.8"
