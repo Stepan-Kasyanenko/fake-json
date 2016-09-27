@@ -1,0 +1,29 @@
+{
+  "name": "fakejson",
+  "description": "API for generate json data",
+  "main": "",
+  "authors": [
+    "Stepan Kasyanenko stepan.kasyanenko@gmail.com"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/javascripts/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui": "^0.4.0",
+    "angular-ui-router": "^0.3.1",
+    "ng-jsoneditor": "angular-tools/ng-jsoneditor#^1.0.0",
+    "angular-ui-grid": "^3.2.9",
+    "bootstrap": "^3.3.7"
+  },
+  "resolutions": {
+    "angular": "^1.5.8"
+  }
+}
